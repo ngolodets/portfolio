@@ -15,8 +15,12 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1>Nina Golodets</h1>
-          <h3>Full Stack Web Developer</h3>
+          <div className='intro'>
+            <h1 className='myinfo'>Nina Golodets
+              {/* <img src="./pic.jpg" style={{width: '40vw', height: '10vh'}} alt=""/> */}
+            </h1>
+            <h3 className='myinfo'>Full Stack Web Developer</h3>
+          </div>
           <div className='contact'>
             <a href="https://linkedin.com/in/ninagolodets" 
               className='link'

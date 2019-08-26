@@ -35,11 +35,6 @@
   /* font-family: 'Anton', sans-serif; */
   font-family: 'Teko', sans-serif;
   /* font-family: 'Yanone Kaffeesatz', sans-serif; */
-  /* position: fixed; */
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -47,9 +42,9 @@
 .pics {
   width: 250px;
   height: 300px;
-  border: 4px solid gray;
+  border: 4px solid rgba(128, 128, 128, 0.8);
+  box-sizing: border-box;
 }
-
 
 .projectinfo {
   display: inline-block;
@@ -63,11 +58,14 @@
 #description1, .flip, #description2, #description3, #description4 {
   background-color: gray;
   width: 250px;
-  border: 4px solid gray;
+  border: 4px solid rgba(128, 128, 128, 0.8);
+  box-sizing: border-box;
 }
 
 #description1, #description2, #description3, #description4 {
   display: none;
+  padding: 2px;
+  background-color: rgb(192, 189, 189);
 }
 
 .flip {
@@ -75,6 +73,11 @@
 }
 
 .flip:hover {
+  color: white;
+  background-color: #282c34;
+}
+
+.projectlink:hover {
   color: white;
   background-color: #282c34;
 }
@@ -101,6 +104,36 @@
 .projectlinksection {
   text-align: center;
   width: 250px;
+}
+
+.projectlink {
+  text-decoration: none;
+  color: black;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+  font-size: 13.5px;
+  margin-left: 5px;
+  margin-top: 2px;
+  width: 40px;
+  height: 10px;
+  border: 4px solid gray;
+}
+
+/* .myinfo { */
+  /* color: yellow; */
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+} */
+
+.intro {
+  /* border: 4px solid white; */
+  margin-top: 0;
+  width: 100vw;
+  margin: 0 auto;
+  background-image: url('/pic.jpg');
+  /* background-position: center;  */
+  background-repeat: no-repeat; 
+  background-size: cover;
+  /* background-color: rgba(255, 255, 255, 0.5); */
 }
 
 .footer {
