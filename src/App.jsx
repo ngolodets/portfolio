@@ -3,7 +3,6 @@ import AboutMe from './AboutMe';
 import Skills from './Skills';
 import Projects from './Projects';
 //import Resume from './Resume';
-// import {Document} from 'react-pdf';
 import {
   BrowserRouter as Router,
   Route,
@@ -19,29 +18,43 @@ function App() {
           <h1>Nina Golodets</h1>
           <h3>Full Stack Web Developer</h3>
           <div className='contact'>
-            <a href="https://linkedin.com/in/ninagolodets">LinkedIn</a>
-            <a href="https://github.com/ngolodets">GitHub</a>
+            <a href="https://linkedin.com/in/ninagolodets" 
+              className='link'
+              target='_blank' 
+              rel="noopener noreferrer">
+              <img style={{height: '40px', width: '40px'}} src="https://image.flaticon.com/icons/png/512/61/61109.png" alt=""/>
+            </a>
+            <a href="https://github.com/ngolodets" 
+              className='link'
+              target='_blank' 
+              rel="noopener noreferrer">
+              <img style={{height: '40px', width: '40px'}} src="https://icon-library.net/images/github-icon-png/github-icon-png-22.jpg" alt=""/>
+            </a>
             {/* <a href="nina.golodets@gmail.com">Email</a> */}
           </div>
         </header>
         <div className='body'>
           <div className='right'>
-            <Link className='links' to='/'>Home</Link><br />
-            <Link className='links' to="/projects">Projects</Link><br />
-            <Link className='links' to="/skills">Skills</Link><br />
-            <a className='links' href="./Nina Golodets Resume 2019.pdf">Resume</a><br />
+            <Link className='links' to='/'>ABOUT</Link><br />
+            <Link className='links' to="/projects">PROJECTS</Link><br />
+            <Link className='links' to="/skills">SKILLS</Link><br />
+            <a className='links' 
+                href="./Nina Golodets Resume 2019.pdf"
+                target='_blank' 
+                rel="noopener noreferrer">RESUME
+            </a>
+            <br />
           </div>
           <div className='left'>
             <AboutMe />
             {/* <Resume /> */}
             <Route path='/projects' component={Projects} />
             <Route path='/skills' component={Skills} />
-            {/* <Skills />
-            <Projects /> */}
           </div>
         </div>
-        <footer>©️2019 Nina Golodets</footer>
-
+        <footer style={{textAlign: 'right', 
+                        marginRight: '20px'}}>©️2019 Nina Golodets
+        </footer>
       </div>
     </Router>
   );
