@@ -6,15 +6,16 @@
   display: flex;
   justify-content: center;
   align-items: top;
-  overflow-y: auto;
-  /* overflow-x: hidden; */
+  overflow-y: auto; 
+  overflow-x: hidden;
 }
 
 .left {
   flex: 3;
   text-align: left;
-  overflow-y: auto;
+  overflow-y: scroll;
   margin: 10px;
+  height: 60vh;
 }
 
 .right {
@@ -22,18 +23,64 @@
   overflow-y: auto;
   text-align: left;
   margin: 10px;
+  height: 60vh;
 }
-
 
 .App-header {
   background-color: #282c34;
-  min-height: 30vh;
-  display: flex;
+  min-height: 28vh;
+  width: 100vw;
+  text-align: center;
+  /* position: fixed; */
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: center; */
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.pics {
+  width: 250px;
+  height: 300px;
+}
+
+.projects {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+.projectinfo {
+  display: inline-block;
+  /* flex: 1; */
+  margin: 10px;
+  padding: 10px;
+  height: 320px;
+  width: 300px;
+}
+
+.footer {
+  height: 2vh;
+  width: 100vw;
+  /* text-align: center; */
+  font-size: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  .links {
+    font-size: 10px;
+  }
+
+  .App-header {
+    height: 20vh;
+  }
+
+  .footer {
+    height: 1vh;
+    font-size: 3px;
+  }
 }
 
 
