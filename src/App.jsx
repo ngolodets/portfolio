@@ -16,9 +16,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <div className='intro'>
-            <h1 className='myinfo'>Nina Golodets
-              {/* <img src="./pic.jpg" style={{width: '40vw', height: '10vh'}} alt=""/> */}
-            </h1>
+            <h1 className='myinfo'>Nina Golodets</h1>
             <h3 className='myinfo'>Full Stack Web Developer</h3>
           </div>
           <div className='contact'>
@@ -26,15 +24,22 @@ function App() {
               className='link'
               target='_blank' 
               rel="noopener noreferrer">
-              <img style={{height: '40px', width: '40px'}} src="https://image.flaticon.com/icons/png/512/61/61109.png" alt=""/>
+              <img className='icons' style={{height: '40px', width: '40px'}} src="https://image.flaticon.com/icons/png/512/61/61109.png" alt=""/>
             </a>
             <a href="https://github.com/ngolodets" 
               className='link'
               target='_blank' 
               rel="noopener noreferrer">
-              <img style={{height: '40px', width: '40px'}} src="https://icon-library.net/images/github-icon-png/github-icon-png-22.jpg" alt=""/>
+              <img className='icons' style={{height: '40px', width: '40px'}} src="https://icon-library.net/images/github-icon-png/github-icon-png-22.jpg" alt=""/>
             </a>
-            {/* <a href="nina.golodets@gmail.com">Email</a> */}
+            <a href="./Nina Golodets Resume 2019.pdf"
+                className='link'
+                target='_blank' 
+                rel="noopener noreferrer">
+            <img className='icons' src="./selfpic.jpg" style={{width: '40px', 
+                                            height: '40px',
+                                            borderRadius: '5px'}}/>
+            </a>
           </div>
         </header>
         <div className='body'>
