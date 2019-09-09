@@ -10,10 +10,10 @@
 //   }
 
 //   const pgNumber = pageNumber;
-//   // const nmPages = numPages;
+//   const nmPages = numPages;
 //   return (
 //     <div>
-//       <Document file='./Nina Golodets Resume 2019.pdf' 
+//       <Document file='/Nina Golodets Resume 2019.pdf' 
 //                 onDocumentLoadSuccess={() => onDocumentLoadSuccess({pgNumber})} >
 //         <Page pgNumber={pageNumber} />
 //       </Document>
@@ -22,31 +22,31 @@
 //   )
 // }
 
-// class Resume extends Component {
-//   state = {
-//     numPages: null,
-//     pageNumber: 1,
-//   }
+// // class Resume extends Component {
+// //   state = {
+// //     numPages: null,
+// //     pageNumber: 1,
+// //   }
  
-//   onDocumentLoadSuccess = ({ numPages }) => {
-//     this.setState({ numPages });
-//   }
+// //   onDocumentLoadSuccess = ({ numPages }) => {
+// //     this.setState({ numPages });
+// //   }
  
-//   render() {
-//     const { pageNumber, numPages } = this.state;
+// //   render() {
+// //     const { pageNumber, numPages } = this.state;
  
-//     return (
-//       <div>
-//         <Document
-//           file="./Nina Golodets Resume 2019.pdf"
-//           onLoadSuccess={this.onDocumentLoadSuccess}
-//         >
-//           <Page pageNumber={pageNumber} />
-//         </Document>
-//         <p>Page {pageNumber} of {numPages}</p>
-//       </div>
-//     );
-//   }
-// }
+// //     return (
+// //       <div>
+// //         <Document
+// //           file="./Nina Golodets Resume 2019.pdf"
+// //           onLoadSuccess={this.onDocumentLoadSuccess}
+// //         >
+// //           <Page pageNumber={pageNumber} />
+// //         </Document>
+// //         <p>Page {pageNumber} of {numPages}</p>
+// //       </div>
+// //     );
+// //   }
+// // }
 
 // export default Resume;
