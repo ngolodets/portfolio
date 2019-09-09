@@ -32,14 +32,14 @@ function App() {
               rel="noopener noreferrer">
               <img className='icons' style={{height: '40px', width: '40px'}} src="https://icon-library.net/images/github-icon-png/github-icon-png-22.jpg" alt=""/>
             </a>
-            <a href="./Nina Golodets Resume 2019.pdf"
+            {/* <a href="./Nina Golodets Resume 2019.pdf"
                 className='link'
                 target='_blank' 
                 rel="noopener noreferrer">
             <img className='icons' src="./selfpic.jpg" style={{width: '40px', 
                                             height: '40px',
                                             borderRadius: '5px'}}/>
-            </a>
+            </a> */}
           </div>
         </header>
         <div className='body'>
