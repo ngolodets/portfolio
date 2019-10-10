@@ -2,7 +2,8 @@ import React from 'react';
 
 function AboutMe() {
   return (
-    <div style={{textAlign: 'left'}}>
+    <div style={{textAlign: 'left', }}
+      id='about'>
       <h3 style={{fontFamily: "'Anton', sans-serif", 
                   letterSpacing: '1.4px'}}>About Me:
       </h3>

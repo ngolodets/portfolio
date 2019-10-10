@@ -11,6 +11,14 @@ import {
 import './App.css';
 
 function App() {
+  function hideAbout() {
+    let element = document.getElementById('about');
+    element.style.display = "none";
+  }
+  function showAbout() {
+    let element = document.getElementById('about');
+    element.style.display = 'block';
+  }
   return (
     <Router>
       <div className="App">
@@ -44,9 +52,21 @@ function App() {
         </header>
         <div className='body'>
           <div className='right'>
-            <Link className='links' to='/'>ABOUT</Link><br />
-            <Link className='links' to="/projects">PROJECTS</Link><br />
-            <Link className='links' to="/skills">SKILLS</Link><br />
+            <Link className='links' 
+                  to='/' 
+                  onClick={() => showAbout()}>
+              ABOUT
+            </Link><br />
+            <Link className='links' 
+                  to="/projects" 
+                  onClick={() => hideAbout()}>
+              PROJECTS
+            </Link><br />
+            <Link className='links' 
+                  to="/skills"
+                  onClick={() => hideAbout()}>
+              SKILLS
+            </Link><br />
             <a className='links' 
                 href="./Nina Golodets Resume 2019.pdf"
                 target='_blank' 
@@ -62,7 +82,8 @@ function App() {
           </div>
         </div>
         <footer style={{textAlign: 'right', 
-                        marginRight: '20px'}}>©️2019 Nina Golodets
+                        marginRight: '20px'}}>
+          ©️2019 Nina Golodets
         </footer>
       </div>
     </Router>
