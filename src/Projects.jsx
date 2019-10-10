@@ -19,12 +19,12 @@ function Projects() {
     </h3>
     <div className='projects'>
       <div className='projectinfo'>
-        <h5 className='flip' onMouseOver={() => displayDescription('description1')}>The Book App</h5>
+        <h5 className='flip' onMouseOver={() => displayDescription('description1', 'pic1')}>The Book App</h5>
         <div id='description1'>
           <p className='p4'>The Book Application allows the user to browse through a selection of various literary works and decide about what to read next.</p>
           <p className='p4tech'>It is a full-stack MERN application that utilizes an external API.  This app was lovingly put together using React, JWT authentication, MongoDB, Mongoose, and RESTful Routing via Express.</p>
-        </div>
-        <img className='pics' src="./BookApp.png" alt="Application Screenshot"/><br />
+        </div>  
+        <img id='pic1' className='pics' src="./BookApp.png" alt="Application Screenshot"/><br />   
         <div className='projectlinksection'>
           <a className='projectlink' 
             href="https://github.com/ngolodets/project4"
